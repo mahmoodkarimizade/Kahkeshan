@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:gravity="center"
+    android:layoutDirection="rtl"
+    android:background="@android:color/white">
+
+    <ir.galaxycell.kahkeshan.AVLoadingIndicatorView.AVLoadingIndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorColor="@color/selectitemtools"
+        app:indicatorName="BallScaleMultipleIndicator"
+        style="@style/AVLoadingIndicatorView.Small"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="بارگذاری ..."
+        android:textColor="@android:color/black"
+        android:layout_marginRight="5dp"
+        android:textSize="10sp"/>
+
+</LinearLayout>

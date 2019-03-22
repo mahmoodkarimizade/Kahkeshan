@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/fragment_add_rippleview_send"
+        android:background="@drawable/border_fragment_home"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:padding="2dp">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/fragment_add_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            style="@style/Base.Widget.Design.TabLayout"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fragment_add_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:background="@drawable/border_fragment_add_viewpager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </LinearLayout>
+
+    <com.andexert.library.RippleView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_add_rippleview_send"
+        ripple:rv_type="rectangle"
+        ripple:rv_rippleDuration="200"
+        ripple:rv_color="@android:color/holo_blue_bright"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/fragment_add_button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:theme="@style/MyButtonLayout2"
+            android:text="ارسال"/>
+
+    </com.andexert.library.RippleView>
+
+
+
+</RelativeLayout>

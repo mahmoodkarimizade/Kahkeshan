@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:layoutDirection="ltr"
+    android:id="@+id/fragment_home_order_verifiedcode_dialog_layout_linerlayout_mainlayout">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cancel"
+        android:padding="4dp"
+        android:id="@+id/fragment_home_order_verifiedcode_dialog_layout_imageview_cancel"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_fragment_add_viewpager"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/selectitem"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:id="@+id/fragment_home_order_verifiedcode_dialog_layout_textview_verifiedcode"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:theme="@style/MyTextInputLayout">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_home_order_verifiedcode_dialog_layout_edittext_code"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:textDirection="ltr"
+            android:drawableLeft="@drawable/code"
+            android:digits="0123456789"
+            android:hint="کد دریافتی"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <com.andexert.library.RippleView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ripple:rv_type="rectangle"
+        ripple:rv_rippleDuration="200"
+        ripple:rv_color="@android:color/holo_blue_bright"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/fragment_home_order_verifiedcode_dialog_layout_button_registerorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:theme="@style/MyButtonLayout2"
+            android:text="ثبت سفارش"/>
+
+    </com.andexert.library.RippleView>
+
+</LinearLayout>

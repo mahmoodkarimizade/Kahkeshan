@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/gridview_layout"
+    android:padding="2dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/galaxywallpapers"
+        android:scaleType="centerCrop"
+        android:id="@+id/see_profile_gridview_library_imageview_image"/>
+
+</LinearLayout>

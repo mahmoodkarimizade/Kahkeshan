@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl">
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layoutDirection="rtl"
+        tools:context=".UI.MainActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/see_edit_product_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/see_edit_product_toolbar"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layoutDirection="rtl"
+                    android:background="#fafafa">
+
+                    <com.andexert.library.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        ripple:rv_type="rectangle"
+                        ripple:rv_rippleDuration="200"
+                        ripple:rv_color="@android:color/holo_blue_bright"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="4dp"
+                        android:id="@+id/see_edit_product_rippleview_morelayout">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/more"
+                            android:layout_centerVertical="true"
+                            android:padding="4dp"
+                            android:id="@+id/see_edit_product_toolbar_imageview_more"/>
+
+                    </com.andexert.library.RippleView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ویرایش"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone"
+                        android:id="@+id/see_edit_product_toolbar_textview_title"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/see_edit_product_imageview_imageprofile"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FF000000"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/galaxywallpapers"
+                        android:visibility="gone"
+                        android:layout_marginLeft="8dp"/>
+
+                    <com.andexert.library.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        ripple:rv_type="rectangle"
+                        ripple:rv_rippleDuration="200"
+                        ripple:rv_color="@android:color/holo_blue_bright"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="4dp"
+                        android:visibility="gone"
+                        android:id="@+id/see_edit_product_rippleview_savelayout">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/save"
+                            android:layout_centerVertical="true"
+                            android:padding="4dp"
+                            android:id="@+id/see_edit_product_toolbar_imageview_save"/>
+
+                    </com.andexert.library.RippleView>
+
+                    <ir.galaxycell.kahkeshan.AVLoadingIndicatorView.AVLoadingIndicatorView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:indicatorColor="@color/selectitemtools"
+                        app:indicatorName="BallScaleMultipleIndicator"
+                        android:visibility="gone"
+                        android:padding="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:id="@+id/see_edit_product_toolbar_AVloading_loading"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/main_activity_app_bar"
+            android:background="@drawable/toolbar_dropshadow" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/tools"
+        android:background="@color/selectitem">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/see_edit_product_relativelayout_buttonbar"
+            android:background="@drawable/border_fragment_home"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:padding="2dp">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/see_edit_product_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                style="@style/Base.Widget.Design.TabLayout"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/see_edit_product_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:padding="2dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_above="@+id/see_edit_product_relativelayout_buttonbar"
+            android:background="@drawable/actionbar_dropshadow" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/see_edit_product_relativelayout_buttonbar"
+            android:background="#fafafa">
+
+            <com.andexert.library.RippleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                ripple:rv_type="rectangle"
+                ripple:rv_rippleDuration="200"
+                android:layout_alignParentRight="true"
+                ripple:rv_color="@android:color/holo_blue_bright"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/see_edit_product_rippleview_likelayout">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/favoriteprofileoff"
+                        android:id="@+id/see_edit_product_imageview_like"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/see_edit_product_textview_countlike"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        android:text="0"/>
+                </LinearLayout>
+
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                ripple:rv_type="rectangle"
+                ripple:rv_rippleDuration="200"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                ripple:rv_color="@android:color/holo_blue_bright"
+                android:id="@+id/see_edit_product_rippleview_share">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/share"
+                        android:id="@+id/see_edit_product_imageview_share"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/see_edit_product_textview_share"
+                        android:textSize="10sp"
+                        android:textColor="@color/selectitem"
+                        android:text="اشتراک"/>
+                </LinearLayout>
+
+            </com.andexert.library.RippleView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

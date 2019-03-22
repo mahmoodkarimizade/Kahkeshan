@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">کهکشان</string>
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Colse drawer</string>
+    <string name="custom_title">انتخاب عکس</string>
+</resources>

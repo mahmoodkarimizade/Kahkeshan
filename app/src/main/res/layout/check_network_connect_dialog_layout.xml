@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/check_network_connect_dialog_layout_linerlayout_mainlayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:textDirection="rtl"
+        android:padding="4dp"
+        android:text="لطفا اتصال به اینترنت خود را بررسی کنید"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/check_network_connect_dialog_layout_textview_title"/>
+
+    <ir.galaxycell.kahkeshan.AVLoadingIndicatorView.AVLoadingIndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorColor="@color/selectitemtools"
+        app:indicatorName="BallScaleMultipleIndicator"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp" />
+
+</LinearLayout>

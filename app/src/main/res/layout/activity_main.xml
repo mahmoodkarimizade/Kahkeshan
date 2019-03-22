@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_activity_drawerlayout_mainlayout"
+    android:layoutDirection="rtl">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/main_framlayout_fragmentitemselected6" />
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layoutDirection="rtl"
+        tools:context=".UI.MainActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/main_activity_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/main_activity_toolbar"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layoutDirection="rtl"
+                    android:background="#fafafa">
+
+                    <com.andexert.library.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        ripple:rv_type="rectangle"
+                        ripple:rv_rippleDuration="200"
+                        ripple:rv_color="@android:color/holo_blue_bright"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="4dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/menu"
+                            android:layout_centerVertical="true"
+                            android:padding="4dp"
+                            android:id="@+id/main_activity_toolbar_imageview_menu"/>
+
+                    </com.andexert.library.RippleView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layoutDirection="rtl"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="4dp">
+
+                        <com.andexert.library.RippleView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            ripple:rv_type="rectangle"
+                            ripple:rv_rippleDuration="200"
+                            ripple:rv_color="@android:color/holo_blue_bright">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/search"
+                                android:padding="4dp"
+                                android:visibility="gone"
+                                android:id="@+id/main_activity_toolbar_imageview_search"/>
+
+                        </com.andexert.library.RippleView>
+
+                        <com.andexert.library.RippleView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            ripple:rv_type="rectangle"
+                            ripple:rv_rippleDuration="200"
+                            ripple:rv_color="@android:color/holo_blue_bright">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/news"
+                                android:padding="4dp"
+                                android:id="@+id/main_activity_toolbar_imageview_news"/>
+
+                        </com.andexert.library.RippleView>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/main_activity_app_bar"
+            android:background="@drawable/toolbar_dropshadow" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_activity_app_bar"
+            android:id="@+id/main_framlayout_fragmentitemselected1"
+            android:layout_above="@+id/main_linerlayout_buttonbar"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_activity_app_bar"
+            android:id="@+id/main_framlayout_fragmentitemselected2"
+            android:layout_above="@+id/main_linerlayout_buttonbar"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_activity_app_bar"
+            android:id="@+id/main_framlayout_fragmentitemselected3"
+            android:layout_above="@+id/main_linerlayout_buttonbar"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_activity_app_bar"
+            android:id="@+id/main_framlayout_fragmentitemselected4"
+            android:layout_above="@+id/main_linerlayout_buttonbar"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_activity_app_bar"
+            android:id="@+id/main_framlayout_fragmentitemselected5"
+            android:layout_above="@+id/main_linerlayout_buttonbar"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_above="@+id/main_linerlayout_buttonbar"
+            android:background="@drawable/actionbar_dropshadow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:id="@+id/main_linerlayout_buttonbar"
+            android:background="#fafafa">
+
+            <com.andexert.library.RippleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                ripple:rv_type="rectangle"
+                ripple:rv_rippleDuration="200"
+                ripple:rv_color="@android:color/holo_blue_bright"
+                android:id="@+id/main_activity_rippleview_homelayout">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/home_on"
+                        android:id="@+id/main_activity_imageview_home"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/main_activity_textview_home"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        android:text="صفحه اصلی"/>
+                </LinearLayout>
+
+            </com.andexert.library.RippleView>
+
+
+            <com.andexert.library.RippleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                ripple:rv_type="rectangle"
+                ripple:rv_rippleDuration="200"
+                ripple:rv_color="@android:color/holo_blue_bright"
+                android:id="@+id/main_activity_rippleview_librarylayout">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/library_off"
+                        android:id="@+id/main_activity_imageview_library"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/main_activity_textview_library"
+                        android:textSize="10sp"
+                        android:textColor="@color/unselectitem"
+                        android:text="کتابخانه"/>
+                </LinearLayout>
+
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                ripple:rv_type="rectangle"
+                ripple:rv_rippleDuration="200"
+                ripple:rv_color="@android:color/holo_blue_bright"
+                android:id="@+id/main_activity_rippleview_addlayout">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_off"
+                        android:id="@+id/main_activity_imageview_add"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/main_activity_textview_add"
+                        android:textSize="10sp"
+                        android:textColor="@color/unselectitem"
+                        android:text="افزودن"/>
+                </LinearLayout>
+
+
+            </com.andexert.library.RippleView>
+
+
+            <com.andexert.library.RippleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                ripple:rv_type="rectangle"
+                ripple:rv_rippleDuration="200"
+                ripple:rv_color="@android:color/holo_blue_bright"
+                android:id="@+id/main_activity_rippleview_chatlayout">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/chat_off"
+                        android:id="@+id/main_activity_imageview_chat"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/main_activity_textview_chat"
+                        android:textSize="10sp"
+                        android:textColor="@color/unselectitem"
+                        android:text="گفت و گو"/>
+                </LinearLayout>
+
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                ripple:rv_type="rectangle"
+                ripple:rv_rippleDuration="200"
+                ripple:rv_color="@android:color/holo_blue_bright"
+                android:id="@+id/main_activity_rippleview_profilelayout">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/profile_off"
+                        android:id="@+id/main_activity_imageview_profile"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/main_activity_textview_profile"
+                        android:textSize="10sp"
+                        android:textColor="@color/unselectitem"
+                        android:text="کهکشان من"/>
+                </LinearLayout>
+
+            </com.andexert.library.RippleView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/main_activity_navigationview_user"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/main_activity_hedar_navigation_view_layout"/>
+
+</android.support.v4.widget.DrawerLayout>
+

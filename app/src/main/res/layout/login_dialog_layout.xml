@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/login_dialog_layout_linerlayout_mainlayout">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:focusableInTouchMode="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:theme="@style/MyTextInputLayout">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_dialog_layout_edittext_username"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:inputType="text"
+                android:textDirection="ltr"
+                android:drawableLeft="@drawable/username"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                android:hint="نام کاربری یا شماره موبایل"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyTextInputLayout">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_dialog_layout_edittext_password"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/password"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                android:hint="کلمه عبور"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <com.andexert.library.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ripple:rv_type="rectangle"
+            ripple:rv_rippleDuration="200"
+            ripple:rv_color="@android:color/holo_blue_bright"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/login_dialog_layout_button_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:theme="@style/MyButtonLayout1"
+                android:text="ورود"/>
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ripple:rv_type="rectangle"
+            ripple:rv_rippleDuration="200"
+            ripple:rv_color="@android:color/holo_blue_bright"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/login_dialog_layout_button_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:theme="@style/MyButtonLayout2"
+                android:text="ثبت نام"/>
+
+        </com.andexert.library.RippleView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textDirection="rtl"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight=".4"
+                android:background="@android:color/white" />
+            <com.andexert.library.RippleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ripple:rv_type="rectangle"
+                ripple:rv_rippleDuration="200"
+                ripple:rv_color="@android:color/holo_blue_bright">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/login_dialog_layout_textview_forgetpassword"
+                    android:textSize="10sp"
+                    android:padding="5dp"
+                    android:text="کلمه عبور خود را فراموش کرده اید؟"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/border_login_dialog_forgetpassword" />
+            </com.andexert.library.RippleView>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight=".4"
+                android:background="@android:color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

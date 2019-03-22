@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:rotation="180">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/fragment_chat_recyclerview_mechat_layout_imageview_imageprofile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/galaxywallpapers"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFffffff"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="right"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="8dp"
+            android:padding="2dp"
+            android:background="@drawable/border_fragment_home"
+            android:orientation="vertical"
+            android:layoutDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@android:color/white"
+                android:id="@+id/fragment_chat_recyclerview_mechat_layout_textview_username"
+                android:text="نام کاربری"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="2dp"
+                android:background="@drawable/border_fragment_add_viewpager">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:textColor="@color/selectitem"
+                    android:text="متن پیام"
+                    android:id="@+id/fragment_chat_recyclerview_mechat_layout_textview_message"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"
+                android:text="تاریخ"
+                android:layout_gravity="left"
+                android:id="@+id/fragment_chat_recyclerview_mechat_layout_textview_date"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

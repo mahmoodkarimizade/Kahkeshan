@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:padding="1dp"
+    android:background="@drawable/border_fragment_profile_info_layout1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_profile_gridview_headr_layout_linerlayout_infolayout"
+        android:background="#ffffff">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/fragment_profile_gridview_headr_layout_imageview_imageprofile"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/galaxywallpapers"
+            app:civ_border_width="2dp"
+            android:layout_marginTop="5dp"
+            app:civ_border_color="@android:color/black"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="10dp"
+            android:layoutDirection="rtl"
+            android:id="@+id/fragment_profile_gridview_headr_layout_linerlayout_profile"
+            android:layout_below="@+id/fragment_profile_gridview_headr_layout_imageview_imageprofile">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نام کاربری"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:id="@+id/fragment_profile_gridview_headr_layout_textview_username"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="بیوگرافی"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/fragment_profile_gridview_headr_layout_textview_biography"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لینک"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/fragment_profile_gridview_headr_layout_textview_link"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:id="@+id/fragment_profile_gridview_headr_layout_linerlayout_info">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="پیام"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:text="0"
+                    android:id="@+id/fragment_profile_gridview_headr_layout_textview_posts"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="پیرو"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:text="0"
+                    android:id="@+id/fragment_profile_gridview_headr_layout_textview_following"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="پیروی"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:text="0"
+                    android:id="@+id/fragment_profile_gridview_headr_layout_textview_follower"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.andexert.library.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            ripple:rv_type="rectangle"
+            ripple:rv_rippleDuration="200"
+            android:layout_centerHorizontal="true"
+            ripple:rv_color="@android:color/holo_blue_bright"
+            android:id="@+id/fragment_profile_gridview_headr_layout_rippview_editprofile"
+            android:layout_below="@+id/fragment_profile_gridview_headr_layout_linerlayout_info"
+            android:layout_marginTop="10sp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_fragment_profile_editprofile"
+                android:padding="2dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ویرایش پروفایل"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+        </com.andexert.library.RippleView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_profile_gridview_headr_layout_linerlayout_infolayout"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl">
+
+        <com.andexert.library.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            ripple:rv_type="rectangle"
+            ripple:rv_rippleDuration="200"
+            ripple:rv_color="@android:color/holo_blue_bright"
+            android:id="@+id/fragment_profile_gridview_headr_layout_rippview_libraryprofile">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/libraryprofileon"
+                    android:id="@+id/fragment_profile_gridview_headr_layout_imageview_libraryprofile"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment_profile_gridview_headr_layout_textview_libraryprofile"
+                    android:textColor="@color/selectitemtools"
+                    android:textSize="10sp"
+                    android:text="0"/>
+            </LinearLayout>
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            ripple:rv_type="rectangle"
+            ripple:rv_rippleDuration="200"
+            ripple:rv_color="@android:color/holo_blue_bright"
+            android:id="@+id/fragment_profile_gridview_headr_layout_rippview_favoritesprofile">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/favoriteprofileoff"
+                    android:id="@+id/fragment_profile_gridview_headr_layout_imageview_favoritesprofile"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment_profile_gridview_headr_layout_textview_favoritesprofile"
+                    android:textColor="@color/selectitem"
+                    android:textSize="10sp"
+                    android:text="0"/>
+            </LinearLayout>
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            ripple:rv_type="rectangle"
+            ripple:rv_rippleDuration="200"
+            ripple:rv_color="@android:color/holo_blue_bright"
+            android:id="@+id/fragment_profile_gridview_headr_layout_rippview_followingprofile">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/followingprofileoff"
+                    android:id="@+id/fragment_profile_gridview_headr_layout_imageview_followingprofile"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment_profile_gridview_headr_layout_textview_followingprofile"
+                    android:textColor="@color/selectitem"
+                    android:textSize="10sp"
+                    android:text="0"/>
+            </LinearLayout>
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            ripple:rv_type="rectangle"
+            ripple:rv_rippleDuration="200"
+            ripple:rv_color="@android:color/holo_blue_bright"
+            android:id="@+id/fragment_profile_gridview_headr_layout_rippview_followersprofile">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/followerprofileoff"
+                    android:id="@+id/fragment_profile_gridview_headr_layout_imageview_followersprofile"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment_profile_gridview_headr_layout_textview_followersprofile"
+                    android:textColor="@color/selectitem"
+                    android:textSize="10sp"
+                    android:text="0"/>
+            </LinearLayout>
+        </com.andexert.library.RippleView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="216dp"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+
+
+                <cn.lightsky.infiniteindicator.InfiniteIndicator
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:indicator_type="indicator_anim_line"
+                    android:id="@+id/indicator_default_circle">
+
+                </cn.lightsky.infiniteindicator.InfiniteIndicator>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:padding="2dp"
+                android:background="@drawable/border_fragment_home">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ثبت سفارش"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:background="@drawable/border_fragment_add_viewpager">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:id="@+id/fragment_home_spiner_typeorder"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/toolbar_dropshadow" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/MyTextInputLayoutEditProfile"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/selectitem"
+                            android:textSize="15sp"
+                            android:hint="توضیحات"
+                            android:textColorHint="@color/unselectitem"
+                            android:inputType="textMultiLine"
+                            android:id="@+id/fragment_home_edittextview_description"
+                            android:textDirection="rtl" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <com.andexert.library.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fragment_add_rippleview_send"
+                        ripple:rv_type="rectangle"
+                        ripple:rv_rippleDuration="200"
+                        ripple:rv_color="@android:color/holo_blue_bright">
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/fragment_home_button_sendorder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:theme="@style/MyButtonLayout2"
+                            android:textStyle="bold"
+                            android:text="ارسال"/>
+
+                    </com.andexert.library.RippleView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:padding="2dp"
+                android:background="@drawable/border_fragment_home">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="خدمات"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/border_fragment_add_viewpager">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <com.andexert.library.RippleView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            ripple:rv_type="rectangle"
+                            ripple:rv_rippleDuration="200"
+                            ripple:rv_color="@android:color/holo_blue_bright"
+                            android:id="@+id/fragment_home_rippleview_searchlayout">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/selectitemtools"
+                                android:textSize="10sp"
+                                android:text="تحقیق"
+                                android:id="@+id/fragment_home_textview_search"/>
+                        </com.andexert.library.RippleView>
+
+                        <com.andexert.library.RippleView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            ripple:rv_type="rectangle"
+                            ripple:rv_rippleDuration="200"
+                            ripple:rv_color="@android:color/holo_blue_bright"
+                            android:id="@+id/fragment_home_rippleview_registerlayout">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/unselectitem"
+                                android:textSize="10sp"
+                                android:text="ثبت نام"
+                                android:id="@+id/fragment_home_textview_register"/>
+                        </com.andexert.library.RippleView>
+
+                        <com.andexert.library.RippleView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            ripple:rv_type="rectangle"
+                            ripple:rv_rippleDuration="200"
+                            ripple:rv_color="@android:color/holo_blue_bright"
+                            android:id="@+id/fragment_home_rippleview_translationlayout">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/unselectitem"
+                                android:textSize="10sp"
+                                android:text="ترجمه"
+                                android:id="@+id/fragment_home_textview_translation"/>
+                        </com.andexert.library.RippleView>
+
+                        <com.andexert.library.RippleView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            ripple:rv_type="rectangle"
+                            ripple:rv_rippleDuration="200"
+                            ripple:rv_color="@android:color/holo_blue_bright"
+                            android:id="@+id/fragment_home_rippleview_typinglayout">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/unselectitem"
+                                android:textSize="10sp"
+                                android:text="تایپ"
+                                android:id="@+id/fragment_home_textview_typing"/>
+                        </com.andexert.library.RippleView>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/toolbar_dropshadow" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="216dp"
+                        android:id="@+id/fragment_home_framlayout_service" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:padding="2dp"
+                android:background="@drawable/border_fragment_home">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ارتباط با ما"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:background="@drawable/border_fragment_add_viewpager">
+
+                    <com.andexert.library.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        ripple:rv_type="rectangle"
+                        ripple:rv_rippleDuration="200"
+                        android:padding="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="16dp"
+                        ripple:rv_color="@android:color/holo_blue_bright"
+                        android:id="@+id/fragment_home_rippleview_operatorlayout">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/operator"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="اپراتور"
+                                android:textSize="10sp"
+                                android:textColor="@color/selectitem"/>
+
+                        </LinearLayout>
+
+
+                    </com.andexert.library.RippleView>
+
+                    <com.andexert.library.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        ripple:rv_type="rectangle"
+                        ripple:rv_rippleDuration="200"
+                        android:padding="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="16dp"
+                        ripple:rv_color="@android:color/holo_blue_bright"
+                        android:id="@+id/fragment_home_rippleview_telegramlayout">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/telegram"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="تلگرام"
+                                android:textSize="10sp"
+                                android:textColor="@color/selectitem"/>
+
+                        </LinearLayout>
+
+                    </com.andexert.library.RippleView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

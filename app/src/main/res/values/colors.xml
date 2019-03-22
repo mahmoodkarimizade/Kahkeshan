@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="backgrounddialog">#55ffffff</color>
+    <color name="selectitem">#000000</color>
+    <color name="unselectitem">#C7C7C7</color>
+    <color name="selectitemtools">#448aff</color>
+    <color name="tollbarcolor">#fafafa</color>
+
+</resources>
